@@ -1,0 +1,3 @@
+nasm -f macho64 <file>.s
+cc -c main.c
+ld main.o <file>.o -macosx_version_min 10.14.6 -lSystem
