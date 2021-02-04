@@ -6,7 +6,7 @@
 /*   By: ldevilla <ldevilla@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/03 14:06:00 by ldevilla          #+#    #+#             */
-/*   Updated: 2021/02/04 13:37:18 by ldevilla         ###   ########lyon.fr   */
+/*   Updated: 2021/02/04 14:16:25 by ldevilla         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,9 @@ int main(int ac, char **av)
 
 	//ft_strcpy(dest, "0123456789abcd")
 	
-	//printf("%d\n", ft_strlen(av[1]));
-	char dst[] = "test";
-	char src[] = "lol";
-	printf("%s\n", ft_strcpy(dst, src));
+	printf("%d\n", ft_strlen(av[1]));
+	//char dst[] = "test";
+	//char src[] = "lol";
+	//printf("%s\n", ft_strcpy(dst, src));
 	return 0;
 }

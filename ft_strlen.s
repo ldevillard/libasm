@@ -1,15 +1,12 @@
-
 global _ft_strlen
-section .text
 _ft_strlen:
 	xor	rcx, rcx
-_strlen_next:
+.loop:
 	cmp	[rdi], byte 0
-	je	_strlen_null
+	je	.return
 	inc	rcx
 	inc	rdi
-	jmp	_strlen_next 
-
-_strlen_null:
+	jmp	.loop 
+.return:
 	mov	rax, rcx
 	ret
