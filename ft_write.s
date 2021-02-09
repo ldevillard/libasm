@@ -7,10 +7,10 @@ _ft_write:
     jc .error
     ret
 .error:
-    mov rcx, rax
-    push rcx
+    mov rdi, rax
+    push rdi
     call ___error
-    pop rcx
-    mov [rax], rcx
+    pop rdi
+    mov [rax], rdi
     mov rax, -1
     ret

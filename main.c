@@ -6,7 +6,7 @@
 /*   By: ldevilla <ldevilla@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/03 14:06:00 by ldevilla          #+#    #+#             */
-/*   Updated: 2021/02/08 15:50:51 by ldevilla         ###   ########lyon.fr   */
+/*   Updated: 2021/02/09 11:11:00 by ldevilla         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int		ft_strlen(char *str);
 char	*ft_strcpy(char *dst, char *src);
 ssize_t	ft_write(int fd, const void *buf, size_t count);
 ssize_t	ft_read(int fd, const void *buf, size_t count);
-
+char	*ft_strdup(const char *s1);
 //void	start(void);
 
 int	my_strcmp(char *s1, char *s2)
@@ -55,15 +55,13 @@ int main(int ac, char **av)
 	//printf("%d\n", my_strcmp(s1, s2));
 	//printf("%d\n", strcmp(s1, s2));
 	//printf("WRITE : %zd\n", write(1, "\nHello World !\n", 15));
-	
-	char *str;
-	str = malloc(sizeof(char) * 11);
-	str[10] = '\0';
-	printf("FT_READ : %zd\n", ft_read(1, str, 10));
+	//printf("FT_READ : %zd\n", ft_read(1, str, 10));
 	
 	//printf("READ : %zd\n", ft_read(1, str, 10));
-	printf("STR : %s\n", str);
-	printf("ERROR : %d\n", errno);
-	free(str);
+	//printf("STR : %s\n", str);
+	//printf("ERROR : %d\n", errno);
+	//free(str);
+	printf("%s\n", ft_strdup("lolilol"));
+	printf("%s\n", strdup("lolilol"));
 	return 0;
 }
