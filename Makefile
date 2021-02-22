@@ -5,7 +5,10 @@ LIBC = ar rc
 LIBI = ranlib
 SRCS = ft_strlen.s\
 		ft_strcpy.s\
-		ft_strcmp.s
+		ft_strcmp.s\
+		ft_write.s\
+		ft_read.s\
+		ft_strdup.s
 OBJS = $(SRCS:.s=.o)
 %.o: %.s $(HEADER)
 	$(CC) $(CFLAGS) -s $< -o $(<:.s=.o)
